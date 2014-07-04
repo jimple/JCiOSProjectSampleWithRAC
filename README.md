@@ -6,6 +6,7 @@ JCiOSProjectSampleWithRAC
 这是我第一个使用RAC的正式项目，原来计划完全用MVVM方式，但实际开发时并没有一步到位。现在利用这个机会顺便改造一下，使用MVVM实现列表的功能。
 
 
+=========================
 计划：
 
 1、工程目录结构参考： http://limboy.me/ios/2013/09/23/build-ios-application.html 
