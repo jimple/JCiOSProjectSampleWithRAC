@@ -1,0 +1,205 @@
+//
+//  Localizable.strings
+//  JCiOSProjectSample
+//
+//  Created by jimple on 14/7/6.
+//  Copyright (c) 2014年 JimpleChen. All rights reserved.
+//
+
+
+
+"Price"                                 = "Price";
+"TodayDiscountPrice"                    = "Theatre of the Day";
+"DateAndTime"                           = "Date & Time";
+"Address"                               = "Address";
+"EventDetailContent"                    = "Details";
+"Sponsor"                               = "Host";
+"OneDayAgoSuffix"                       = "day ago";
+"DaysAgoSuffix"                         = "days ago";
+"OneHourAgoSuffix"                      = "hour ago";
+"HoursAgoSuffix"                        = "hours ago";
+"OneMinuteAgoSuffix"                    = "minute ago";
+"MinutesAgoSuffix"                      = "minutes ago";
+"JustNow"                               = "just now";
+"ChooseTicketItem"                      = "Choose Date & time";
+"ChooseAreaItem"                        = "Area";
+"ChooseQuantity"                        = "Quantity";
+"Quantity"                              = "Quantity";
+"Eventor"                               = "Eventor";
+"SelfPickUp"                            = "Self Pick-up";
+"DeliverToHome"                         = "Delivery";
+"ETicket"                               = "Pick-up at the door";
+"ChooseShippingMethod"                  = "Choose Shipping Method";
+"ChooseAddress"                         = "Choose Address";
+"ModifyAddress"                         = "Modify";
+"SetupAddress"                          = "Add Address";
+"Consignee"                             = "Recipient";
+"Country"                               = "Country/Region";
+"City"                                  = "City";
+"ISOcountryCode"                        = "Country Code";
+"Mobile"                                = "Mobile number";
+"FillInAllFields"                       = "Please fill in required fields";
+"Committing"                            = "Submitting";
+"ChooseCountry"                         = "Country/Region";
+"ChooseCity"                            = "City";
+"ServerFailedTips"                      = "Connecting server failed.";
+"PleaseChooseCountryFirst"              = "Please choose country first";
+"SystemWillHoldTicketTips"              = "The system will hold your seat(s) for %dmins";
+"IsDeleteOrder"                         = "Cancel this order?";
+"Submiting"                             = "Submitting order...";
+"PaymentCancel"                         = "Cancelled";
+"PaymentFailed"                         = "Failed";
+"PaymentSucc"                           = "Succeeded";
+"HoldTicketTips"                        = "The system will hold your ticket(s)";
+"NoMoreTips"                            = "??No More??";
+"SearchPlaceHolder"                     = "Search";
+"ChooseSNSToLogin"                      = "You can login with one of the following";
+"SNSLoginTips"                          = "* We do NOT post on your facebook without permission";
+"LoginLicenseTips"                      = "By siging up you are agree to Eventor's Terms of Use and Privacy Policies.";
+"ShippingMethod"                        = "Shipping Method";
+"PaymentMethod"                         = "Payment";
+"TicketPrice"                           = "Price";
+"DeliveryFee"                           = "Delivery Fee";
+"Fee"                                   = "Fee";
+"Discount"                              = "Discount";
+"Total"                                 = "Total";
+"QuantityPC"                            = "PC";
+"QuantityPCS"                           = "PCS";
+"EntranceID"                            = "ID";
+"RefNumber"                             = "Ref NO.";
+"TipsStartAfter"                        = "Starts in ";
+"TipsDay"                               = "day";
+"TipsDays"                              = "days";
+"TipsHour"                              = "hour";
+"TipsHours"                             = "hours";
+"ChooseToBuy"                           = "??Choose??";
+"RemainTimeout"                         = "Timeout";
+"NetworkNotReachableTips"               = "Network problem";
+"EventOnGoingTips"                      = "On going";
+"EventUpcomingTips"                     = "Upcoming";
+"TodayStr"                              = "Today";
+
+// 按钮
+"WalkIn"                                = "Walk-in";
+"Popular"                               = "Popular";
+"Upcoming"                              = "Upcoming";
+"NotPaid"                               = "Unpaid";
+"Expired"                               = "Used & Expired";
+
+"LeftBarBtnNameHome"                    = "Events";
+"LeftBarBtnNameTickets"                 = "Tickets";
+"LeftBarBtnNameNotifications"           = "Notification Centre";
+"LeftBarBtnNameToday"                   = "Theatre of the Day";
+"LeftBarBtnNameSetting"                 = "Settings";
+
+"BtnJoinEvent"                          = "I'm in!";
+"BtnCancel"                             = "Cancel";
+"BtnSave"                               = "Save";
+"BtnYes"                                = "Yes";
+"BtnNo"                                 = "No";
+"BtnPayNow"                             = "Buy Now";
+"BtnSearch"                             = "Search";
+"BtnAdvance"                            = "Advanced Search";
+"BtnStartDate"                          = "Start Date";
+"BtnEndDate"                            = "End Date";
+"BtnSortType"                           = "All Categories";
+"BtnOk"                                 = "OK";
+"BtnDelete"                             = "Delete";
+"BtnPreMonth"                           = "<";
+"BtnNextMonth"                          = ">";
+"BtnChooseDate"                         = "Choose Date";
+"BtnChooseArea"                         = "Choose Area";
+"BtnQuantity"                           = "Quantity";
+"BtnChooseDelivery"                     = "Choose Delivery";
+"BtnChooseLocation"                     = "Choose Location";
+"BtnCheck"                              = "Check";
+"BtnOrderAgain"                         = "??Order Again??";
+
+// 页面标题
+"EventorTitle"                          = "Eventor";
+"DiscoverTitle"                         = "Discover";
+"TicketsTitle"                          = "Tickets";
+"QRCodeTitle"                           = "Scan QR Code";
+"CalendarTitle"                         = "Calendar";
+"SettingTitle"                          = "Settings";
+"AccountTitle"                          = "My Account";
+"LanguageTitle"                         = "Language";
+"LocationTitle"                         = "Location";
+"AboutTitle"                            = "Version Info";
+"EventDetialTitle"                      = "Event Details";
+"TodayDiscountTitle"                    = "Theater of the Day";
+"NotificationTitle"                     = "Notification Centre";
+"TicketsDetailTitle"                    = "Ticket Details";
+"MapTitle"                              = "Navigation";
+"OrderConfirmTitle"                     = "Confirmation";
+"TicketSystemTitle"                     = "Ticketing System";
+
+
+// 图片名称
+"CellPosterPlaceholderImgName"          = "CellPosterPlaceholder";
+"SortIconPlaceholderImgName"            = "SortIconPlaceholder";
+"EventListCellBadge_Preemptive"         = "priority";
+"EventListCellBadge_Discount"           = "special";
+"EventListCellBadge_Exclusive"          = "exclusive";
+"EventListCellBadge_SmallAmount"        = "few";
+"EventListCellBadge_Extra"              = "additional";
+"EventListCellBadge_TodayDiscount"      = "today";
+"EventListCellBadge_BuyAndGo"           = "buyAndGo";
+"EventListCellBadge_Free"               = "free";
+"EventListCellBadge_TomorrowDiscount"   = "tomorrow50";
+
+// google map定位
+"FailedLocate"                          = "Failed to locate";
+"Analysis"                              = "Analysing...";
+"FailedAnalysis"                        = "Obtain route failed";
+
+//设置
+"Account"                               = "My Account";
+"AccountSetting"                        = "Account Setting";
+"Facebook"                              = "Facebook";
+"Link"                                  = "Connect";
+"UnLink"                                = "Disconnect";
+"FBLogoutTip"                           = "Do you really want to log off?";
+"Language"                              = "Language";
+"Location"                              = "Region/City";
+"Notification"                          = "Push Notification";
+"SetAPNS"                               = "Please go to \n Settings > Notification Centre,\n Turn on Eventor's notification access";
+"RateNow"                               = "Give Eventor a good rate!";
+"AboutEventor"                          = "About Eventor";
+"PrivacyPolicy"                         = "Privacy Policies";
+"Copyright"                             = "Copyright";
+"Disclaimer"                            = "Disclaimer";
+"CurrentVersion"                        = "Current Version";
+
+
+//订单详情
+"OrderName"                             = "??Name??";
+"OrderDate"                             = "Date";
+"OrderVenue"                            = "Venue";
+"OrderTicket"                           = "??Tickets??";
+"OrderPrice"                            = "Price";
+"OrderTime"                             = "Order Time";
+"OrderRemark"                           = "Remark";
+
+
+//分享
+"ShareInfo"                             = "Share to";
+"Facebook"                              = "Facebook";
+"Whatapp"                               = "Whatsapp";
+"Wechat"                                = "WeChat";
+"Timeline"                              = "Moments";
+
+
+
+"noData"                                = "Sorry, we cannot find a matching event.";
+
+//提示开启定位服务
+"LocationOpen"                          = "Open";
+"LocationTip"                           = "Turn on Location Services to get real-time event info.";
+"LocationSetting"                       = "Please go to \n Settings > Privacy > Location Services,\n Turn on Eventor's location access";
+
+//掃描
+"QRCode"                                = "QR Code";
+"QRScanResult"                          = "Search Result";
+"QRScanGo"                              = "Go";
+

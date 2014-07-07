@@ -1,0 +1,19 @@
+//
+//  Localizable.strings
+//  JCiOSProjectSample
+//
+//  Created by jimple on 14/7/6.
+//  Copyright (c) 2014年 JimpleChen. All rights reserved.
+//
+
+
+// Button
+"FirstFlownBtn"                             = "流程一";
+"SecondFlownBtn"                            = "流程二";
+
+// View Title
+"FirstFlowRootViewTitle"                    = "流程一";
+"SecondFlowRootViewTitle"                   = "流程二";
+
+
+
