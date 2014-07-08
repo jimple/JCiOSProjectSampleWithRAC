@@ -8,6 +8,20 @@
 
 #import "BaseServerDataListViewModel.h"
 
+@class EventListItemCellViewModel;
 @interface EventListViewModel : BaseServerDataListViewModel
+
+- (EventListItemCellViewModel *)cellViewModelAtIndex:(NSInteger)index;
+
+
+
+
+
+
+
+
+
+
+
 
 @end

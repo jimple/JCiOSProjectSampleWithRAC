@@ -10,4 +10,10 @@
 
 @interface EventListViewController : UIViewController
 
+
+- (UITableView *)tableView;
+- (void)resetPullHeaderAndFooterViewOriginalPos;
+
+
+
 @end

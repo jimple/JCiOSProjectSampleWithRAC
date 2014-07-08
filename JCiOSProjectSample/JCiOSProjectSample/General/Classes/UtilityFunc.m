@@ -114,31 +114,17 @@
 // 重设scroll view的内容区域和滚动条区域
 + (void)resetScrlView:(UIScrollView *)sclView contentInsetWithNaviBar:(BOOL)bHasNaviBar tabBar:(BOOL)bHasTabBar
 {
-    [[self class] resetScrlView:sclView contentInsetWithNaviBar:bHasNaviBar tabBar:bHasTabBar iOS7ContentInsetStatusBarHeight:0 inidcatorInsetStatusBarHeight:0];
-}
-+ (void)resetScrlView:(UIScrollView *)sclView contentInsetWithNaviBar:(BOOL)bHasNaviBar tabBar:(BOOL)bHasTabBar iOS7ContentInsetStatusBarHeight:(NSInteger)iContentMulti inidcatorInsetStatusBarHeight:(NSInteger)iIndicatorMulti
-{
     if (sclView)
     {
         UIEdgeInsets inset = sclView.contentInset;
         UIEdgeInsets insetIndicator = sclView.scrollIndicatorInsets;
-        //        CGPoint ptContentOffset = sclView.contentOffset;
         CGFloat fTopInset = bHasNaviBar ? NaviBarHeight : 0.0f;
         CGFloat fTopIndicatorInset = bHasNaviBar ? NaviBarHeight : 0.0f;
         CGFloat fBottomInset = bHasTabBar ? TabBarHeight : 0.0f;
         
         fTopInset += StatusBarHeight;
-        //        fTopIndicatorInset += StatusBarHeight;
-        
-        if (IsiOS7Later)
-        {
-            fTopInset += (iContentMulti * StatusBarHeight);
-            fTopIndicatorInset += (iIndicatorMulti * StatusBarHeight);
-        }else{}
-        
-        //        ptContentOffset.y -= fTopInset;
-        //        [sclView setContentOffset:ptContentOffset];
-        
+        fTopIndicatorInset += StatusBarHeight;
+
         insetIndicator.top += fTopIndicatorInset;
         insetIndicator.bottom += fBottomInset;
         [sclView setScrollIndicatorInsets:insetIndicator];

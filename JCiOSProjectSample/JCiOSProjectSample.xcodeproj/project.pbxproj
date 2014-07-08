@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07255441196A9F1A00FF70C4 /* EventListItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0725543F196A9F1A00FF70C4 /* EventListItemCell.m */; };
+		07255442196A9F1A00FF70C4 /* EventListItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07255440196A9F1A00FF70C4 /* EventListItemCell.xib */; };
 		077E9DEB1968D037006585D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077E9DEA1968D037006585D0 /* Foundation.framework */; };
 		077E9DED1968D037006585D0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077E9DEC1968D037006585D0 /* CoreGraphics.framework */; };
 		077E9DEF1968D037006585D0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077E9DEE1968D037006585D0 /* UIKit.framework */; };
@@ -52,6 +54,7 @@
 		077E9EE1196A8940006585D0 /* GlobalObjectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 077E9EE0196A8940006585D0 /* GlobalObjectManager.m */; };
 		077E9EE4196A8957006585D0 /* UtilityFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 077E9EE3196A8957006585D0 /* UtilityFunc.m */; };
 		077E9EE7196A89A5006585D0 /* UtilityFunc+ValueTransformerForModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 077E9EE6196A89A5006585D0 /* UtilityFunc+ValueTransformerForModel.m */; };
+		07F99B7B196B808F00C4D04E /* EventListItemCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F99B7A196B808F00C4D04E /* EventListItemCellViewModel.m */; };
 		815F84BC8BF7430BA2D0D103 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA7CEAA35604CFC98227F25 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +69,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0725543E196A9F1A00FF70C4 /* EventListItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventListItemCell.h; sourceTree = "<group>"; };
+		0725543F196A9F1A00FF70C4 /* EventListItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventListItemCell.m; sourceTree = "<group>"; };
+		07255440196A9F1A00FF70C4 /* EventListItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventListItemCell.xib; sourceTree = "<group>"; };
 		077E9DE71968D037006585D0 /* JCiOSProjectSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JCiOSProjectSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		077E9DEA1968D037006585D0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		077E9DEC1968D037006585D0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -150,6 +156,8 @@
 		077E9EE3196A8957006585D0 /* UtilityFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityFunc.m; sourceTree = "<group>"; };
 		077E9EE5196A89A5006585D0 /* UtilityFunc+ValueTransformerForModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UtilityFunc+ValueTransformerForModel.h"; sourceTree = "<group>"; };
 		077E9EE6196A89A5006585D0 /* UtilityFunc+ValueTransformerForModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UtilityFunc+ValueTransformerForModel.m"; sourceTree = "<group>"; };
+		07F99B79196B808F00C4D04E /* EventListItemCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventListItemCellViewModel.h; sourceTree = "<group>"; };
+		07F99B7A196B808F00C4D04E /* EventListItemCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventListItemCellViewModel.m; sourceTree = "<group>"; };
 		2859B954AEB0427BA85224A2 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		ABA7CEAA35604CFC98227F25 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -368,6 +376,9 @@
 		077E9E2F1968D4CA006585D0 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				0725543E196A9F1A00FF70C4 /* EventListItemCell.h */,
+				0725543F196A9F1A00FF70C4 /* EventListItemCell.m */,
+				07255440196A9F1A00FF70C4 /* EventListItemCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -592,6 +603,8 @@
 				077E9ED1196A8148006585D0 /* BaseServerDataListViewModel.m */,
 				077E9ECD196A7645006585D0 /* EventListViewModel.h */,
 				077E9ECE196A7645006585D0 /* EventListViewModel.m */,
+				07F99B79196B808F00C4D04E /* EventListItemCellViewModel.h */,
+				07F99B7A196B808F00C4D04E /* EventListItemCellViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -691,6 +704,7 @@
 				077E9E2D1968D4B3006585D0 /* Images.xcassets in Resources */,
 				077E9E571968DB7C006585D0 /* Localizable.strings in Resources */,
 				077E9EA3196A4096006585D0 /* FirstFlow.storyboard in Resources */,
+				07255442196A9F1A00FF70C4 /* EventListItemCell.xib in Resources */,
 				077E9E561968DB7C006585D0 /* Localizable.strings in Resources */,
 				077E9EA5196A4119006585D0 /* SecondFlow.storyboard in Resources */,
 				077E9E591968DBC2006585D0 /* Main.storyboard in Resources */,
@@ -763,6 +777,8 @@
 				077E9EA11968E3AE006585D0 /* MainSliderViewController.m in Sources */,
 				077E9EE4196A8957006585D0 /* UtilityFunc.m in Sources */,
 				077E9E791968DF72006585D0 /* SliderViewController.m in Sources */,
+				07255441196A9F1A00FF70C4 /* EventListItemCell.m in Sources */,
+				07F99B7B196B808F00C4D04E /* EventListItemCellViewModel.m in Sources */,
 				077E9E951968DFE1006585D0 /* SGInfoAlert.m in Sources */,
 				077E9EE7196A89A5006585D0 /* UtilityFunc+ValueTransformerForModel.m in Sources */,
 				077E9ED6196A8497006585D0 /* BaseSVRRequestOperator.m in Sources */,

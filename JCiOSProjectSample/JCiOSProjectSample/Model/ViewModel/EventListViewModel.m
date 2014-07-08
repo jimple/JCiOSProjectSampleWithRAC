@@ -8,6 +8,8 @@
 
 #import "EventListViewModel.h"
 #import "SVREventListOperator.h"
+#import "EventListItemModel.h"
+#import "EventListItemCellViewModel.h"
 
 @interface EventListViewModel ()
 
@@ -25,10 +27,28 @@
     if (self)
     {
         _cellViewModelArray = [[NSMutableArray alloc] init];
-        
+        _svrOper = [[SVREventListOperator alloc] init];
         
     }else{}
     return self;
+}
+
+- (void)dealloc
+{
+    [_svrOper cancelRequest];
+}
+
+- (EventListItemCellViewModel *)cellViewModelAtIndex:(NSInteger)index
+{
+    APP_ASSERT(_cellViewModelArray);
+    EventListItemCellViewModel *cellViewModel;
+    
+    if ((index >= 0) && (index < _cellViewModelArray.count))
+    {
+        cellViewModel = _cellViewModelArray[index];
+    }else{APP_ASSERT_STOP}
+    
+    return cellViewModel;
 }
 
 // overwrite
@@ -44,9 +64,17 @@
          if (eventInfoArray && (eventInfoArray.count > 0))
          {
              self.pageNum++;
-             [self.dataArray addObjectsFromArray:eventInfoArray];
-             self.appendItemCount = @(eventInfoArray.count);
              
+             for (EventListItemModel *dataModel in eventInfoArray)
+             {
+                 [self.dataArray addObject:dataModel];
+                 
+                 EventListItemCellViewModel *cellViewModel = [[EventListItemCellViewModel alloc] init];
+                 [cellViewModel setDataModel:dataModel];
+                 [self.cellViewModelArray addObject:cellViewModel];
+             }
+             
+             self.appendItemCount = @(eventInfoArray.count);
              if (eventInfoArray.count < self.pageSize)
              {
                  self.isNoMore  = @(YES);

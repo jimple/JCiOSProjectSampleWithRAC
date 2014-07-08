@@ -30,7 +30,6 @@
 
 // 重设scroll view的内容区域和滚动条区域
 + (void)resetScrlView:(UIScrollView *)sclView contentInsetWithNaviBar:(BOOL)bHasNaviBar tabBar:(BOOL)bHasTabBar;
-+ (void)resetScrlView:(UIScrollView *)sclView contentInsetWithNaviBar:(BOOL)bHasNaviBar tabBar:(BOOL)bHasTabBar iOS7ContentInsetStatusBarHeight:(NSInteger)iContentMulti inidcatorInsetStatusBarHeight:(NSInteger)iIndicatorMulti;
 // 按找状态栏高度的倍数来重设scroll view的内容区域和滚动条区域
 + (void)resetScrlView:(UIScrollView *)sclView contentInsetStatusBarTimes:(NSInteger)contentTimes indicatorInsetStatusBarTimes:(NSInteger)indicatorTimes;
 // 指定高度重设内容区域和滚动条区域

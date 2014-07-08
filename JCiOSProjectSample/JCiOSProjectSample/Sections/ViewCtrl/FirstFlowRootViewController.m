@@ -7,8 +7,12 @@
 //
 
 #import "FirstFlowRootViewController.h"
+#import "EventListViewController.h"
 
 @interface FirstFlowRootViewController ()
+
+@property (nonatomic, strong) EventListViewController *eventListVC;
+
 
 @end
 
@@ -51,6 +55,20 @@
 - (void)initUI
 {
     [self setTitle:LOCALIZATION(@"FirstFlowRootViewTitle")];
+    
+    _eventListVC = (EventListViewController *)[UtilityFunc viewCtrlFormStoryboard:FirstFlowStoryboard viewCtrlID:@"EventListViewController"];
+    _eventListVC.view.frame = self.view.bounds;
+    
+    [self.view addSubview:_eventListVC.view];
+    [self addChildViewController:_eventListVC];
+    
+    // tableview内容区域和滚动条位置减掉status bar＋navigation bar的高度
+    [UtilityFunc resetScrlView:_eventListVC.tableView contentInsetWithNaviBar:YES tabBar:NO];
+    
+    // tableView的inset调整后需重设下拉刷新头的原始位置，否则下拉刷新结束回复原始位置时会恢复到调整前的位置
+    [_eventListVC resetPullHeaderAndFooterViewOriginalPos];
+    
+    
     
 }
 

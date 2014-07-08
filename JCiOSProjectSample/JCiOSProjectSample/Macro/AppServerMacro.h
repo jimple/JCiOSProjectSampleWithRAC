@@ -9,7 +9,7 @@
 #ifndef JCiOSProjectSample_AppServerMacro_h
 #define JCiOSProjectSample_AppServerMacro_h
 
-#define STR_ServerDomain                            @"www.baidu.com"
+#define STR_ServerDomain                            @"http://www.baidu.com"
 
 
 #endif

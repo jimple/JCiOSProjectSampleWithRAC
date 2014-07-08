@@ -8,6 +8,9 @@
 
 #import "EventListViewController.h"
 #import "EventListViewModel.h"
+#import "EventListItemCell.h"
+#import "UIScrollView+UzysCircularProgressPullToRefresh.h"
+#import "UIScrollView+JCLoadMoreIndicator.h"
 
 @interface EventListViewController ()
 <
@@ -62,15 +65,28 @@
 
 - (void)initUI
 {
-    
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 }
 
 - (void)bindHandler
 {
     self.eventTableView.delegate = self;
     self.eventTableView.dataSource = self;
+    
+    [self bindViewModelDataHandler];
+    [self bindPullToRefreshAndLoadMoreHandler];
 }
 
+- (UITableView *)tableView
+{
+    return _eventTableView;
+}
+
+- (void)resetPullHeaderAndFooterViewOriginalPos
+{
+    self.tableView.pullToRefreshView.originalTopInset = self.tableView.contentInset.top;
+    self.tableView.loadMoreView.originalBottomInset = self.tableView.contentInset.bottom;
+}
 
 #pragma mark - Table view data source
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -85,51 +101,32 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//    static NSString *CellIdentifier = @"EventListTableCell";
-//    EventListTableCell *cell = (EventListTableCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-//    if (!cell)
-//    {
-//        cell = [EventListTableCell cellFromXib];
-//    }else{}
-//    
-//    EventListInfoModel *itemInfo = [_svrDataHelper.tableDataArray objectAtIndex:indexPath.row];
-//    CGFloat lat = 0.0f;
-//    CGFloat lng = 0.0f;
-//    //    // 仅walk in即兴参与显示距离
-//    //    if (kEEventListType_WalkIn == _eListType)
-//    //    {
-//    lat = [itemInfo.lat floatValue];
-//    lng = [itemInfo.lng floatValue];
-//    //    }else{}
-//    [cell setPosterImgURL:itemInfo.hPosterURL
-//                    title:itemInfo.title
-//                    price:itemInfo.price
-//                   vPirce:itemInfo.vPrice
-//                      lat:lat
-//                      lng:lng
-//                labelType:[itemInfo.eLabelType integerValue]
-//                startDate:itemInfo.startTime
-//                  endDate:itemInfo.endTime
-//     showWalkinCellLayout:(kEEventListType_WalkIn == _eListType)];
-//    
-//    // 滚动到最后时自定加载更多
-//    if (![_svrDataHelper.isNoMore boolValue]
-//        && (indexPath.row >= _svrDataHelper.tableDataArray.count - 2)
-//        && ![self.tableView isLoading])
-//    {
-//        [self.tableView triggerLoadMoreIndicator];
-//    }else{}
-//    
-//    return cell;
+    static NSString *CellIdentifier = @"EventListItemCell";
+    EventListItemCell *cell = (EventListItemCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (!cell)
+    {
+        cell = [EventListItemCell cellFromXib];
+    }else{}
+
+    EventListItemCellViewModel *cellViewModel = [_viewModel cellViewModelAtIndex:indexPath.row];
+    [cell showWithViewModel:cellViewModel];
     
-    return nil;
+    // 滚动到最后时自定加载更多
+    if (![_viewModel.isNoMore boolValue]
+        && (indexPath.row >= (_viewModel.itemCount - 2))
+        && ![self.tableView isLoading])
+    {
+        [self.tableView triggerLoadMoreIndicator];
+    }else{}
+    
+    return cell;
 }
 
 #pragma mark - Table view delegate
-//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    return [EventListTableCell cellHeight];
-//}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return [EventListItemCell cellHeight];
+}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -140,20 +137,79 @@
 #pragma mark - Scroll View Delegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-//    if (scrollView == self.tableView)
-//    {
-//        // Get visible cells on table view.
-//        NSArray *visibleCells = [self.tableView visibleCells];
-//        for (EventListTableCell *cell in visibleCells)
-//        {
-//            [cell cellOnTableView:self.tableView didScrollOnView:self.view];
-//        }
-//    }
+    if (scrollView == self.tableView)
+    {
+        // 显示cell图片视差效果
+        NSArray *visibleCells = [self.tableView visibleCells];
+        for (EventListItemCell *cell in visibleCells)
+        {
+            [cell cellOnTableView:self.tableView didScrollOnView:self.view];
+        }
+    }else{}
 }
 
+#pragma mark -
+- (void)bindPullToRefreshAndLoadMoreHandler
+{
+    @weakify(self);
+    [self.tableView addPullToRefreshActionHandler:^{
+        @strongify(self);
+        [self.viewModel refreshList];
+        [self.tableView reloadData];
+    }];
+    
+    [self.tableView addLoadMoreActionHandler:^{
+        @strongify(self);
+        [self.viewModel loadMore];
+    }];
+}
 
-
-
+- (void)bindViewModelDataHandler
+{
+    // init property handler
+    @weakify(self);
+    [[[RACObserve(self.viewModel, isNoMore) ignore:nil] deliverOn:RACScheduler.mainThreadScheduler]
+     subscribeNext:^(NSNumber *isNoMore) {
+         @strongify(self);
+         if ([isNoMore boolValue])
+         {
+             [self.tableView stopRefreshAnimation];
+             [self.tableView stopLoadMoreIndicator];
+         }
+         else
+         {
+         }
+     }];
+    
+    [[[RACObserve(self.viewModel, appendItemCount) ignore:nil] deliverOn:RACScheduler.mainThreadScheduler]
+     subscribeNext:^(NSNumber *appendItemCount) {
+         @strongify(self);
+         [self.tableView stopRefreshAnimation];
+         [self.tableView stopLoadMoreIndicator];
+         if (appendItemCount.integerValue > 0)
+         {
+             [self.tableView beginUpdates];
+             NSInteger startInsertPos = self.viewModel.itemCount - appendItemCount.integerValue;
+             NSMutableArray *arrRowsAdd = [[NSMutableArray alloc] init];
+             for (int i = 0; i < appendItemCount.integerValue; i++)
+             {
+                 NSIndexPath *indexPath = [NSIndexPath indexPathForRow:(startInsertPos+i) inSection:0];
+                 [arrRowsAdd addObject:indexPath];
+             }
+             [self.tableView insertRowsAtIndexPaths:arrRowsAdd withRowAnimation:UITableViewRowAnimationNone];
+             [self.tableView endUpdates];
+         }else{}
+     }];
+    
+    [[[RACObserve(self.viewModel, requestError) ignore:nil] deliverOn:RACScheduler.mainThreadScheduler]
+     subscribeNext:^(NSError *error) {
+         @strongify(self);
+         [self.tableView stopRefreshAnimation];
+         [self.tableView stopLoadMoreIndicator];
+         
+         // ... show error
+     }];
+}
 
 
 
