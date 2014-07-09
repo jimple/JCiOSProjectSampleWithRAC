@@ -77,6 +77,7 @@
              {
                  sTimes++;
                  [resultArray addObject:@{
+                                          @"id" : [NSString stringWithFormat:@"%d", i],
                                           @"img" : imgURLArray[i%imgURLArray.count],
                                           @"name" : [NSString stringWithFormat:@"The Title [%d]", sTimes],
                                           @"times" : [NSString stringWithFormat:@"%d", sTimes],

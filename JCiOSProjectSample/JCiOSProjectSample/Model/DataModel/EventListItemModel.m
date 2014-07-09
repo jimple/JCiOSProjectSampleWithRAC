@@ -12,6 +12,7 @@
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{
+             @"eventID" : @"id",
              @"imgURL" : @"img",
              @"title" : @"name",
              @"count" : @"times",
@@ -22,6 +23,13 @@
 {
     return [UtilityFunc stringToIntNumberJSONTransformer];
 }
+
+
+
+
+
+
+
 
 
 

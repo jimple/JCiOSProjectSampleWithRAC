@@ -13,7 +13,7 @@
 
 - (UITableView *)tableView;
 - (void)resetPullHeaderAndFooterViewOriginalPos;
-
+- (void)forceRefreshList;
 
 
 @end

@@ -51,6 +51,20 @@
     return cellViewModel;
 }
 
+- (NSString *)eventIDAtIndex:(NSInteger)index
+{
+    APP_ASSERT(_cellViewModelArray);
+    NSString *eventID;
+    
+    if ((index >= 0) && (index < self.dataArray.count))
+    {
+        eventID = ((EventListItemModel *)self.dataArray[index]).eventID;
+    }else{APP_ASSERT_STOP}
+    
+    return eventID;
+}
+
+#pragma mark -
 // overwrite
 - (void)loadMore
 {

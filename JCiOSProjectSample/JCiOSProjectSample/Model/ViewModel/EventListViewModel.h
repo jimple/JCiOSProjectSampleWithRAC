@@ -12,7 +12,7 @@
 @interface EventListViewModel : BaseServerDataListViewModel
 
 - (EventListItemCellViewModel *)cellViewModelAtIndex:(NSInteger)index;
-
+- (NSString *)eventIDAtIndex:(NSInteger)index;
 
 
 

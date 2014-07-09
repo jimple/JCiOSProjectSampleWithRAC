@@ -10,7 +10,7 @@
 
 @interface EventListItemModel : MTLModel <MTLJSONSerializing>
 
-
+@property (nonatomic, copy) NSString *eventID;
 @property (nonatomic, copy) NSString *imgURL;
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, strong) NSNumber *count;

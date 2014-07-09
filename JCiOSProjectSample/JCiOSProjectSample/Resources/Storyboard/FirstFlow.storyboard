@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="14A261i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="VsI-Kz-GpV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="14A283o" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="VsI-Kz-GpV">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -60,11 +60,31 @@
                     </view>
                     <connections>
                         <outlet property="eventTableView" destination="TAq-2c-ien" id="fTS-lB-HFv"/>
+                        <segue destination="00q-DJ-IX2" kind="push" identifier="DetailSegue" id="5g1-Yf-ewL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vut-aA-Zwi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="158" y="917"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="bKd-yZ-MfJ">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="00q-DJ-IX2" customClass="DetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UX6-Ke-b2o"/>
+                        <viewControllerLayoutGuide type="bottom" id="C2u-Jf-4sf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tHK-O4-bg2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gyN-xY-llB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="99z-si-5Nq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="591" y="917"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

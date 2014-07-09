@@ -11,6 +11,9 @@
 #import "EventListItemCell.h"
 #import "UIScrollView+UzysCircularProgressPullToRefresh.h"
 #import "UIScrollView+JCLoadMoreIndicator.h"
+#import "DetailViewController.h"
+
+
 
 @interface EventListViewController ()
 <
@@ -88,6 +91,26 @@
     self.tableView.loadMoreView.originalBottomInset = self.tableView.contentInset.bottom;
 }
 
+- (void)forceRefreshList
+{
+    [self.tableView triggerPullToRefresh];
+}
+
+#pragma mark - Segue
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+	if ([segue.identifier isEqualToString:@"DetailSegue"])
+    {
+        if (sender && [sender isKindOfClass:NSString.class])
+        {
+            NSString *eventID = (NSString *)sender;
+            APP_ASSERT(StringNotEmpty(eventID));
+            [((DetailViewController *)segue.destinationViewController) setEventID:eventID];
+        }else{APP_ASSERT_STOP}
+    }
+    else{}
+}
+
 #pragma mark - Table view data source
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -132,6 +155,8 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 
+    NSString *eventID = [_viewModel eventIDAtIndex:indexPath.row];
+    [self performSegueWithIdentifier:@"DetailSegue" sender:eventID];
 }
 
 #pragma mark - Scroll View Delegate

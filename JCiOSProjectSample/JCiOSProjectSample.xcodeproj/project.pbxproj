@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		071CF399196D1CB10011727F /* EventDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 071CF398196D1CB10011727F /* EventDetailViewModel.m */; };
+		071CF39C196D1F120011727F /* SVREventDetailOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = 071CF39B196D1F120011727F /* SVREventDetailOperator.m */; };
+		071CF39F196D1F9E0011727F /* EventDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 071CF39E196D1F9E0011727F /* EventDetailModel.m */; };
 		07255441196A9F1A00FF70C4 /* EventListItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0725543F196A9F1A00FF70C4 /* EventListItemCell.m */; };
 		07255442196A9F1A00FF70C4 /* EventListItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07255440196A9F1A00FF70C4 /* EventListItemCell.xib */; };
 		077E9DEB1968D037006585D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077E9DEA1968D037006585D0 /* Foundation.framework */; };
@@ -55,6 +58,7 @@
 		077E9EE4196A8957006585D0 /* UtilityFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 077E9EE3196A8957006585D0 /* UtilityFunc.m */; };
 		077E9EE7196A89A5006585D0 /* UtilityFunc+ValueTransformerForModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 077E9EE6196A89A5006585D0 /* UtilityFunc+ValueTransformerForModel.m */; };
 		07F99B7B196B808F00C4D04E /* EventListItemCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F99B7A196B808F00C4D04E /* EventListItemCellViewModel.m */; };
+		07F99B7E196BA42900C4D04E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F99B7D196BA42900C4D04E /* DetailViewController.m */; };
 		815F84BC8BF7430BA2D0D103 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA7CEAA35604CFC98227F25 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +73,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		071CF397196D1CB10011727F /* EventDetailViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventDetailViewModel.h; sourceTree = "<group>"; };
+		071CF398196D1CB10011727F /* EventDetailViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventDetailViewModel.m; sourceTree = "<group>"; };
+		071CF39A196D1F120011727F /* SVREventDetailOperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVREventDetailOperator.h; sourceTree = "<group>"; };
+		071CF39B196D1F120011727F /* SVREventDetailOperator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVREventDetailOperator.m; sourceTree = "<group>"; };
+		071CF39D196D1F9E0011727F /* EventDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventDetailModel.h; sourceTree = "<group>"; };
+		071CF39E196D1F9E0011727F /* EventDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventDetailModel.m; sourceTree = "<group>"; };
 		0725543E196A9F1A00FF70C4 /* EventListItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventListItemCell.h; sourceTree = "<group>"; };
 		0725543F196A9F1A00FF70C4 /* EventListItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventListItemCell.m; sourceTree = "<group>"; };
 		07255440196A9F1A00FF70C4 /* EventListItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventListItemCell.xib; sourceTree = "<group>"; };
@@ -158,6 +168,8 @@
 		077E9EE6196A89A5006585D0 /* UtilityFunc+ValueTransformerForModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UtilityFunc+ValueTransformerForModel.m"; sourceTree = "<group>"; };
 		07F99B79196B808F00C4D04E /* EventListItemCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventListItemCellViewModel.h; sourceTree = "<group>"; };
 		07F99B7A196B808F00C4D04E /* EventListItemCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventListItemCellViewModel.m; sourceTree = "<group>"; };
+		07F99B7C196BA42900C4D04E /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		07F99B7D196BA42900C4D04E /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		2859B954AEB0427BA85224A2 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		ABA7CEAA35604CFC98227F25 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -552,6 +564,8 @@
 				077E9EAF196A4205006585D0 /* FirstFlowNavigationController.m */,
 				077E9EB1196A4228006585D0 /* FirstFlowRootViewController.h */,
 				077E9EB2196A4228006585D0 /* FirstFlowRootViewController.m */,
+				07F99B7C196BA42900C4D04E /* DetailViewController.h */,
+				07F99B7D196BA42900C4D04E /* DetailViewController.m */,
 			);
 			name = FirstFlow;
 			sourceTree = "<group>";
@@ -592,6 +606,8 @@
 			children = (
 				077E9EDC196A8886006585D0 /* EventListItemModel.h */,
 				077E9EDD196A8886006585D0 /* EventListItemModel.m */,
+				071CF39D196D1F9E0011727F /* EventDetailModel.h */,
+				071CF39E196D1F9E0011727F /* EventDetailModel.m */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -605,6 +621,8 @@
 				077E9ECE196A7645006585D0 /* EventListViewModel.m */,
 				07F99B79196B808F00C4D04E /* EventListItemCellViewModel.h */,
 				07F99B7A196B808F00C4D04E /* EventListItemCellViewModel.m */,
+				071CF397196D1CB10011727F /* EventDetailViewModel.h */,
+				071CF398196D1CB10011727F /* EventDetailViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -616,6 +634,8 @@
 				077E9ED5196A8497006585D0 /* BaseSVRRequestOperator.m */,
 				077E9ED7196A858E006585D0 /* SVREventListOperator.h */,
 				077E9ED8196A858E006585D0 /* SVREventListOperator.m */,
+				071CF39A196D1F120011727F /* SVREventDetailOperator.h */,
+				071CF39B196D1F120011727F /* SVREventDetailOperator.m */,
 			);
 			name = APPServer;
 			sourceTree = "<group>";
@@ -763,6 +783,8 @@
 				077E9DF71968D037006585D0 /* main.m in Sources */,
 				077E9EA8196A4156006585D0 /* LeftSideViewController.m in Sources */,
 				077E9EC5196A71B4006585D0 /* LeftSideViewTabHelper.m in Sources */,
+				071CF39F196D1F9E0011727F /* EventDetailModel.m in Sources */,
+				071CF39C196D1F120011727F /* SVREventDetailOperator.m in Sources */,
 				077E9ECF196A7645006585D0 /* EventListViewModel.m in Sources */,
 				077E9EBD196A47D8006585D0 /* HighlightBgViewButton.m in Sources */,
 				077E9EB3196A4228006585D0 /* FirstFlowRootViewController.m in Sources */,
@@ -778,6 +800,7 @@
 				077E9EE4196A8957006585D0 /* UtilityFunc.m in Sources */,
 				077E9E791968DF72006585D0 /* SliderViewController.m in Sources */,
 				07255441196A9F1A00FF70C4 /* EventListItemCell.m in Sources */,
+				07F99B7E196BA42900C4D04E /* DetailViewController.m in Sources */,
 				07F99B7B196B808F00C4D04E /* EventListItemCellViewModel.m in Sources */,
 				077E9E951968DFE1006585D0 /* SGInfoAlert.m in Sources */,
 				077E9EE7196A89A5006585D0 /* UtilityFunc+ValueTransformerForModel.m in Sources */,
@@ -787,6 +810,7 @@
 				077E9E941968DFE1006585D0 /* Reachability.m in Sources */,
 				077E9EE1196A8940006585D0 /* GlobalObjectManager.m in Sources */,
 				077E9E2A1968D39A006585D0 /* AppDelegate.m in Sources */,
+				071CF399196D1CB10011727F /* EventDetailViewModel.m in Sources */,
 				077E9ED2196A8148006585D0 /* BaseServerDataListViewModel.m in Sources */,
 				077E9E601968DF52006585D0 /* CustomBadge.m in Sources */,
 				077E9ECA196A750A006585D0 /* EventListViewController.m in Sources */,
