@@ -46,7 +46,8 @@
              ////////////////////////////////////////////////////////////////
              // 假数据
              NSDictionary *responseDic = @{@"id" : @"123",
-                                           @"desc" : @"abcdefg",
+                                           @"name" : @"The Title",
+                                           @"desc" : @"Desc : abcdefg",
                                            @"time" : [NSString stringWithFormat:@"%f", [[NSDate date] timeIntervalSince1970]]
                                            };
              ////////////////////////////////////////////////////////////////

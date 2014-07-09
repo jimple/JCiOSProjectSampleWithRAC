@@ -13,6 +13,7 @@
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{
              @"eventID" : @"id",
+             @"name" : @"name",
              @"description" : @"desc",
              @"publishDate" : @"time",
              };
@@ -22,8 +23,6 @@
 {
     return [UtilityFunc dateFromSecondSince1970JSONTransformer];
 }
-
-
 
 
 

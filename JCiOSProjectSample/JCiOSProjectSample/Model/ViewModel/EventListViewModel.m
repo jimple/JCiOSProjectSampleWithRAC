@@ -35,7 +35,10 @@
 
 - (void)dealloc
 {
-    [_svrOper cancelRequest];
+    if (_svrOper)
+    {
+        [_svrOper cancelRequest];
+    }else{}
 }
 
 - (EventListItemCellViewModel *)cellViewModelAtIndex:(NSInteger)index

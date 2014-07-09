@@ -11,6 +11,7 @@
 @interface EventDetailModel : MTLModel <MTLJSONSerializing>
 
 @property (nonatomic, copy) NSString *eventID;
+@property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *description;
 @property (nonatomic, strong) NSDate *publishDate;
 

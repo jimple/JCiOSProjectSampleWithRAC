@@ -8,12 +8,18 @@
 
 #import "DetailViewController.h"
 #import "EventDetailViewModel.h"
+#import "MBProgressHUD+creator.h"
+#import "SGInfoAlert+ShowAlert.h"
 
 @interface DetailViewController ()
 
+@property (nonatomic, weak) IBOutlet UILabel *descLabel;
+@property (nonatomic, weak) IBOutlet UIButton *getMoreDataBtn;
+@property (nonatomic, weak) IBOutlet UILabel *moreInfoLabel;
+
 @property (nonatomic, copy) NSString *eventID;
 @property (nonatomic, strong) EventDetailViewModel *viewModel;
-
+@property (nonatomic, strong) MBProgressHUD *loadingIndicator;
 
 @end
 
@@ -38,7 +44,10 @@
     _viewModel = [[EventDetailViewModel alloc] initWithEventID:_eventID];
     
     [self initUI];
-    [self bindHandler];
+    [self bindWithViewModel];
+    
+    [self showLoadingIndicator];
+    [_viewModel requestDetail];
 }
 
 - (void)didReceiveMemoryWarning
@@ -66,14 +75,46 @@
 #pragma mark -
 - (void)initUI
 {
-    
+    self.descLabel.textAlignment = NSTextAlignmentCenter;
 }
 
-- (void)bindHandler
+- (void)bindWithViewModel
 {
+    RAC(self, title) = RACObserve(self.viewModel, title);
+    RAC(self.descLabel, text) = RACObserve(self.viewModel, description);
+    RAC(self.moreInfoLabel, text) = RACObserve(self.viewModel, moreInfo);
     
+    @weakify(self);
+    [[RACObserve(self.viewModel, isRequestFinished) ignore:nil] subscribeNext:^(NSNumber *isFinshed) {
+        @strongify(self);
+        [self hideLoadingIndicator];
+    }];
+    
+    [[RACObserve(self.viewModel, requestErrMsg) ignore:nil] subscribeNext:^(NSString *errorMsg) {
+        @strongify(self);
+        [SGInfoAlert showAlert:errorMsg duration:0.6f inView:self.view];
+    }];
+    
+    self.getMoreDataBtn.rac_command = self.viewModel.getMoreDataCommand;
 }
 
+- (void)showLoadingIndicator
+{
+    if (!_loadingIndicator)
+    {
+        _loadingIndicator = [MBProgressHUD createInViewCtrl:self detailText:@""];
+    }else{}
+    [_loadingIndicator show:YES];
+}
+
+- (void)hideLoadingIndicator
+{
+    if (_loadingIndicator)
+    {
+        [_loadingIndicator hide:YES];
+        _loadingIndicator = nil;
+    }else{}
+}
 
 
 
