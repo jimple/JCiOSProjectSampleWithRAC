@@ -652,6 +652,7 @@
 				077E9DE41968D037006585D0 /* Frameworks */,
 				077E9DE51968D037006585D0 /* Resources */,
 				30142D736773463E8CBC68D3 /* Copy Pods Resources */,
+				071CF3A0196D49D60011727F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -741,6 +742,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		071CF3A0196D49D60011727F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#编译时BuildNumber自动+1\nversion=`/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" $PRODUCT_SETTINGS_PATH`\nversion=`expr $version + 1`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $version\" $PRODUCT_SETTINGS_PATH\n\n\n";
+		};
 		21E10A4010964B74BE02694C /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
