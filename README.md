@@ -31,11 +31,13 @@ RAC要完全弄熟还真的不是一时半会儿的事。
 - BaseServerDataListViewModel
 
 所有下来刷新，拉到底部则加载更多的视图的ViewModel基类。定义一些公用的操作和属性。
+
 例如工程中的EventListViewModel就是继承自此类。
 
 - EventListViewController
 
 由于多个地方可能用到同样的列表视图，所以将这个列表视图独立出来，由其它需使用的视图包含此视图，达到重用的目的。
+
 例如工程中的FirstFlowRootViewController包含了这个列表。
 
 
@@ -48,12 +50,14 @@ RAC要完全弄熟还真的不是一时半会儿的事。
 
 
 =========================
+一些备忘：
+
 - 使用Mantle进行JSon数据转Model。
 - 使用GVUserDefaults统一管理[NSUserDefaults standardUserDefaults]的值。
 - 使用UIScrollView+UzysCircularProgressPullToRefresh使TableView实现下来刷新。
 - 使用UIScrollView+JCLoadMoreIndicator是TableView实现底部加载更多。
 - 一些常用的方法写在UtilityFunc类中。
-
+- BuildPhases中添加RunScirpt使编译时BuildNumber自动+1。
 
 
 
