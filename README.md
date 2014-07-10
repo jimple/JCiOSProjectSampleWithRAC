@@ -25,6 +25,8 @@ RAC要完全弄熟还真的不是一时半会儿的事。
 
 6、多Stroyboard和独立视图XIB混用。
 
+6、通过重新设置AppDelegate.window的RootViewController，实现app内多种入口的切换（侧边栏抽屉与TabBarController切换）。
+
 
 =========================
 几个类的说明：
