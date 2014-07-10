@@ -33,7 +33,7 @@ RAC要完全弄熟还真的不是一时半会儿的事。
 
 - BaseServerDataListViewModel
 
-所有下来刷新，拉到底部则加载更多的视图的ViewModel基类。定义一些公用的操作和属性。
+所有下拉刷新，拉到底部则加载更多的视图的ViewModel基类。定义一些公用的操作和属性。
 
 例如工程中的EventListViewModel就是继承自此类。
 
