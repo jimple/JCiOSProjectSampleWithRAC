@@ -32,6 +32,7 @@
 #pragma mark - Storyboard名
 
 #define MainStoryboard                          @"Main"
+#define OtherMainStoryboard                     @"OtherMain"
 #define FirstFlowStoryboard                     @"FirstFlow"
 #define SecondFlowStoryboard                    @"SecondFlow"
 

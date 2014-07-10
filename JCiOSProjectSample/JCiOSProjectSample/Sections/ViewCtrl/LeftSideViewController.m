@@ -9,6 +9,7 @@
 #import "LeftSideViewController.h"
 #import "HighlightBgViewButton.h"
 #import "LeftSideViewTabHelper.h"
+#import "AppDelegate+RootVC.h"
 
 @interface LeftSideViewController ()
 
@@ -21,7 +22,7 @@
 @property (nonatomic, weak) IBOutlet UILabel *secondFlowLabel;
 @property (nonatomic, weak) IBOutlet HighlightBgViewButton *secondFlowBtn;
 
-
+@property (nonatomic, weak) IBOutlet UIButton *changeToTabVCBtn;
 
 
 @end
@@ -88,6 +89,11 @@
     
     self.secondFlowBtn.rac_command = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
         [[LeftSideViewTabHelper sharedInstance] selectSecondFlowTab];
+        return [RACSignal empty];
+    }];
+    
+    self.changeToTabVCBtn.rac_command = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
+        [(AppDelegate *)([UIApplication sharedApplication].delegate) setOtherVCToRootVC];
         return [RACSignal empty];
     }];
 }

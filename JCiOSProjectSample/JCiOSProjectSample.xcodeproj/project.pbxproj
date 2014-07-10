@@ -10,6 +10,8 @@
 		071CF399196D1CB10011727F /* EventDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 071CF398196D1CB10011727F /* EventDetailViewModel.m */; };
 		071CF39C196D1F120011727F /* SVREventDetailOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = 071CF39B196D1F120011727F /* SVREventDetailOperator.m */; };
 		071CF39F196D1F9E0011727F /* EventDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 071CF39E196D1F9E0011727F /* EventDetailModel.m */; };
+		0722C667196E3285006C57A0 /* AppDelegate+RootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0722C666196E3285006C57A0 /* AppDelegate+RootVC.m */; };
+		0722C66A196E353D006C57A0 /* OtherMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0722C669196E353D006C57A0 /* OtherMain.storyboard */; };
 		07255441196A9F1A00FF70C4 /* EventListItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0725543F196A9F1A00FF70C4 /* EventListItemCell.m */; };
 		07255442196A9F1A00FF70C4 /* EventListItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07255440196A9F1A00FF70C4 /* EventListItemCell.xib */; };
 		077E9DEB1968D037006585D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077E9DEA1968D037006585D0 /* Foundation.framework */; };
@@ -57,6 +59,8 @@
 		077E9EE1196A8940006585D0 /* GlobalObjectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 077E9EE0196A8940006585D0 /* GlobalObjectManager.m */; };
 		077E9EE4196A8957006585D0 /* UtilityFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 077E9EE3196A8957006585D0 /* UtilityFunc.m */; };
 		077E9EE7196A89A5006585D0 /* UtilityFunc+ValueTransformerForModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 077E9EE6196A89A5006585D0 /* UtilityFunc+ValueTransformerForModel.m */; };
+		079B1A10196E35E900152B99 /* FirstTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 079B1A0F196E35E900152B99 /* FirstTabViewController.m */; };
+		079B1A13196E377C00152B99 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 079B1A12196E377C00152B99 /* MainTabBarController.m */; };
 		07F99B7B196B808F00C4D04E /* EventListItemCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F99B7A196B808F00C4D04E /* EventListItemCellViewModel.m */; };
 		07F99B7E196BA42900C4D04E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F99B7D196BA42900C4D04E /* DetailViewController.m */; };
 		815F84BC8BF7430BA2D0D103 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA7CEAA35604CFC98227F25 /* libPods.a */; };
@@ -79,6 +83,9 @@
 		071CF39B196D1F120011727F /* SVREventDetailOperator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVREventDetailOperator.m; sourceTree = "<group>"; };
 		071CF39D196D1F9E0011727F /* EventDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventDetailModel.h; sourceTree = "<group>"; };
 		071CF39E196D1F9E0011727F /* EventDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventDetailModel.m; sourceTree = "<group>"; };
+		0722C665196E3285006C57A0 /* AppDelegate+RootVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+RootVC.h"; sourceTree = "<group>"; };
+		0722C666196E3285006C57A0 /* AppDelegate+RootVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+RootVC.m"; sourceTree = "<group>"; };
+		0722C669196E353D006C57A0 /* OtherMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OtherMain.storyboard; sourceTree = "<group>"; };
 		0725543E196A9F1A00FF70C4 /* EventListItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventListItemCell.h; sourceTree = "<group>"; };
 		0725543F196A9F1A00FF70C4 /* EventListItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventListItemCell.m; sourceTree = "<group>"; };
 		07255440196A9F1A00FF70C4 /* EventListItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventListItemCell.xib; sourceTree = "<group>"; };
@@ -166,6 +173,10 @@
 		077E9EE3196A8957006585D0 /* UtilityFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityFunc.m; sourceTree = "<group>"; };
 		077E9EE5196A89A5006585D0 /* UtilityFunc+ValueTransformerForModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UtilityFunc+ValueTransformerForModel.h"; sourceTree = "<group>"; };
 		077E9EE6196A89A5006585D0 /* UtilityFunc+ValueTransformerForModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UtilityFunc+ValueTransformerForModel.m"; sourceTree = "<group>"; };
+		079B1A0E196E35E900152B99 /* FirstTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstTabViewController.h; sourceTree = "<group>"; };
+		079B1A0F196E35E900152B99 /* FirstTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstTabViewController.m; sourceTree = "<group>"; };
+		079B1A11196E377C00152B99 /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		079B1A12196E377C00152B99 /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
 		07F99B79196B808F00C4D04E /* EventListItemCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventListItemCellViewModel.h; sourceTree = "<group>"; };
 		07F99B7A196B808F00C4D04E /* EventListItemCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventListItemCellViewModel.m; sourceTree = "<group>"; };
 		07F99B7C196BA42900C4D04E /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
@@ -280,6 +291,8 @@
 			children = (
 				077E9E281968D39A006585D0 /* AppDelegate.h */,
 				077E9E291968D39A006585D0 /* AppDelegate.m */,
+				0722C665196E3285006C57A0 /* AppDelegate+RootVC.h */,
+				0722C666196E3285006C57A0 /* AppDelegate+RootVC.m */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -374,6 +387,7 @@
 				077E9E581968DBC2006585D0 /* Main.storyboard */,
 				077E9EA2196A4096006585D0 /* FirstFlow.storyboard */,
 				077E9EA4196A4119006585D0 /* SecondFlow.storyboard */,
+				0722C669196E353D006C57A0 /* OtherMain.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -403,6 +417,7 @@
 				077E9EAD196A41E0006585D0 /* FirstFlow */,
 				077E9EB4196A428F006585D0 /* SecondFlow */,
 				077E9EC7196A7418006585D0 /* SubViewCtrl */,
+				079B1A0D196E35C200152B99 /* OtherMain */,
 			);
 			path = ViewCtrl;
 			sourceTree = "<group>";
@@ -640,6 +655,17 @@
 			name = APPServer;
 			sourceTree = "<group>";
 		};
+		079B1A0D196E35C200152B99 /* OtherMain */ = {
+			isa = PBXGroup;
+			children = (
+				079B1A11196E377C00152B99 /* MainTabBarController.h */,
+				079B1A12196E377C00152B99 /* MainTabBarController.m */,
+				079B1A0E196E35E900152B99 /* FirstTabViewController.h */,
+				079B1A0F196E35E900152B99 /* FirstTabViewController.m */,
+			);
+			name = OtherMain;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -724,6 +750,7 @@
 			files = (
 				077E9E2D1968D4B3006585D0 /* Images.xcassets in Resources */,
 				077E9E571968DB7C006585D0 /* Localizable.strings in Resources */,
+				0722C66A196E353D006C57A0 /* OtherMain.storyboard in Resources */,
 				077E9EA3196A4096006585D0 /* FirstFlow.storyboard in Resources */,
 				07255442196A9F1A00FF70C4 /* EventListItemCell.xib in Resources */,
 				077E9E561968DB7C006585D0 /* Localizable.strings in Resources */,
@@ -813,10 +840,12 @@
 				077E9EA11968E3AE006585D0 /* MainSliderViewController.m in Sources */,
 				077E9EE4196A8957006585D0 /* UtilityFunc.m in Sources */,
 				077E9E791968DF72006585D0 /* SliderViewController.m in Sources */,
+				079B1A13196E377C00152B99 /* MainTabBarController.m in Sources */,
 				07255441196A9F1A00FF70C4 /* EventListItemCell.m in Sources */,
 				07F99B7E196BA42900C4D04E /* DetailViewController.m in Sources */,
 				07F99B7B196B808F00C4D04E /* EventListItemCellViewModel.m in Sources */,
 				077E9E951968DFE1006585D0 /* SGInfoAlert.m in Sources */,
+				079B1A10196E35E900152B99 /* FirstTabViewController.m in Sources */,
 				077E9EE7196A89A5006585D0 /* UtilityFunc+ValueTransformerForModel.m in Sources */,
 				077E9ED6196A8497006585D0 /* BaseSVRRequestOperator.m in Sources */,
 				077E9EB0196A4205006585D0 /* FirstFlowNavigationController.m in Sources */,
@@ -825,6 +854,7 @@
 				077E9EE1196A8940006585D0 /* GlobalObjectManager.m in Sources */,
 				077E9E2A1968D39A006585D0 /* AppDelegate.m in Sources */,
 				071CF399196D1CB10011727F /* EventDetailViewModel.m in Sources */,
+				0722C667196E3285006C57A0 /* AppDelegate+RootVC.m in Sources */,
 				077E9ED2196A8148006585D0 /* BaseServerDataListViewModel.m in Sources */,
 				077E9E601968DF52006585D0 /* CustomBadge.m in Sources */,
 				077E9ECA196A750A006585D0 /* EventListViewController.m in Sources */,
