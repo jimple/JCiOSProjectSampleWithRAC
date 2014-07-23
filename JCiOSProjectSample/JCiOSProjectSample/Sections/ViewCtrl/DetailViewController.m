@@ -67,6 +67,19 @@
 }
 */
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+ 
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+ 
+}
+
+
 - (void)setEventID:(NSString *)eventID
 {
     _eventID = eventID;
@@ -75,11 +88,7 @@
 #pragma mark -
 - (void)initUI
 {
-    //自定义返回按钮
-    UIImage *backButtonImage = [[UIImage imageNamed:@"fanhui"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 30, 0, 0)];
-    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButtonImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-    //将返回按钮的文字position设置不在屏幕上显示
-    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(NSIntegerMin, NSIntegerMin) forBarMetrics:UIBarMetricsDefault];
+
     
     self.descLabel.textAlignment = NSTextAlignmentCenter;
 }
