@@ -90,6 +90,12 @@
 #define COCOAPODS_VERSION_MINOR_BlocksKit_UIKit 2
 #define COCOAPODS_VERSION_PATCH_BlocksKit_UIKit 3
 
+// FastAnimationWithPOP
+#define COCOAPODS_POD_AVAILABLE_FastAnimationWithPOP
+#define COCOAPODS_VERSION_MAJOR_FastAnimationWithPOP 0
+#define COCOAPODS_VERSION_MINOR_FastAnimationWithPOP 0
+#define COCOAPODS_VERSION_PATCH_FastAnimationWithPOP 2
+
 // GVUserDefaults
 #define COCOAPODS_POD_AVAILABLE_GVUserDefaults
 #define COCOAPODS_VERSION_MAJOR_GVUserDefaults 0
@@ -159,14 +165,14 @@
 // SDWebImage
 #define COCOAPODS_POD_AVAILABLE_SDWebImage
 #define COCOAPODS_VERSION_MAJOR_SDWebImage 3
-#define COCOAPODS_VERSION_MINOR_SDWebImage 6
-#define COCOAPODS_VERSION_PATCH_SDWebImage 0
+#define COCOAPODS_VERSION_MINOR_SDWebImage 7
+#define COCOAPODS_VERSION_PATCH_SDWebImage 1
 
 // SDWebImage/Core
 #define COCOAPODS_POD_AVAILABLE_SDWebImage_Core
 #define COCOAPODS_VERSION_MAJOR_SDWebImage_Core 3
-#define COCOAPODS_VERSION_MINOR_SDWebImage_Core 6
-#define COCOAPODS_VERSION_PATCH_SDWebImage_Core 0
+#define COCOAPODS_VERSION_MINOR_SDWebImage_Core 7
+#define COCOAPODS_VERSION_PATCH_SDWebImage_Core 1
 
 // SIAlertView
 #define COCOAPODS_POD_AVAILABLE_SIAlertView
@@ -183,8 +189,8 @@
 // UIActivityIndicator-for-SDWebImage
 #define COCOAPODS_POD_AVAILABLE_UIActivityIndicator_for_SDWebImage
 #define COCOAPODS_VERSION_MAJOR_UIActivityIndicator_for_SDWebImage 1
-#define COCOAPODS_VERSION_MINOR_UIActivityIndicator_for_SDWebImage 0
-#define COCOAPODS_VERSION_PATCH_UIActivityIndicator_for_SDWebImage 5
+#define COCOAPODS_VERSION_MINOR_UIActivityIndicator_for_SDWebImage 1
+#define COCOAPODS_VERSION_PATCH_UIActivityIndicator_for_SDWebImage 0
 
 // UIImage-Helpers
 #define COCOAPODS_POD_AVAILABLE_UIImage_Helpers
@@ -197,4 +203,10 @@
 #define COCOAPODS_VERSION_MAJOR_UzysCircularProgressPullToRefresh 1
 #define COCOAPODS_VERSION_MINOR_UzysCircularProgressPullToRefresh 0
 #define COCOAPODS_VERSION_PATCH_UzysCircularProgressPullToRefresh 7
+
+// pop
+#define COCOAPODS_POD_AVAILABLE_pop
+#define COCOAPODS_VERSION_MAJOR_pop 1
+#define COCOAPODS_VERSION_MINOR_pop 0
+#define COCOAPODS_VERSION_PATCH_pop 6
 

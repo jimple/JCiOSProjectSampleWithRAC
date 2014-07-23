@@ -36,6 +36,8 @@ PODS:
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
   - BZGFormField (1.1.2)
+  - FastAnimationWithPOP (0.0.2):
+    - pop (~> 1.0.5)
   - GVUserDefaults (0.9.4)
   - HexColors (2.2.1)
   - LBBlurredImage (0.2.0)
@@ -45,6 +47,7 @@ PODS:
   - MBProgressHUD (0.8)
   - NZAlertView (0.0.11):
     - UIImage-Helpers
+  - pop (1.0.6)
   - ReactiveCocoa (2.3.1):
     - ReactiveCocoa/UI
   - ReactiveCocoa/Core (2.3.1):
@@ -52,14 +55,14 @@ PODS:
   - ReactiveCocoa/no-arc (2.3.1)
   - ReactiveCocoa/UI (2.3.1):
     - ReactiveCocoa/Core
-  - SDWebImage (3.6):
+  - SDWebImage (3.7.1):
     - SDWebImage/Core
-  - SDWebImage/Core (3.6)
+  - SDWebImage/Core (3.7.1)
   - SIAlertView (1.3)
   - TSMessages (0.9.9):
     - HexColors
-  - UIActivityIndicator-for-SDWebImage (1.0.5):
-    - SDWebImage (~> 3.2)
+  - UIActivityIndicator-for-SDWebImage (1.1):
+    - SDWebImage (~> 3.7)
   - UIImage-Helpers (0.0.2)
   - UzysCircularProgressPullToRefresh (1.0.7)
 
@@ -67,6 +70,7 @@ DEPENDENCIES:
   - AFNetworking
   - BlocksKit
   - BZGFormField
+  - FastAnimationWithPOP
   - GVUserDefaults
   - HexColors
   - LBBlurredImage
@@ -84,17 +88,19 @@ SPEC CHECKSUMS:
   AFNetworking: 6d7b76aa5d04c8c37daad3eef4b7e3f2a7620da3
   BlocksKit: 07c8a80f04275efac6a5f8b973782489c083a182
   BZGFormField: c469a07c251a9fd8bd8d8fce023896b15d752a99
+  FastAnimationWithPOP: 453cac7e3671d27c57db04abec4f6c08a930f413
   GVUserDefaults: b706c0a6ed681ea4693143d920dd5bf49845c3a3
   HexColors: 01384d2bbe8dc4ffa43c3b4135db6e976952d153
   LBBlurredImage: 30cc42be977bbcece286d26d2d9c08b8be7f05e8
   Mantle: c67a7e45e14196ed42b2a7cbb98ff6a9920e6b92
   MBProgressHUD: c356980b0cd097f19acec959b49dca5eb8ec31be
   NZAlertView: d1d2c51cd5dbfaa663f26b7c12a9195a8be7b100
+  pop: e518794da38942c05255eb64b36d894e70cb4f00
   ReactiveCocoa: dca75777b9d18990c8714a3a6f2149f29b4d1462
-  SDWebImage: c6989652c1cdf27cbdf3f56957e2030f825af5bc
+  SDWebImage: 116e88633b5b416ea0ca4b334a4ac59cf72dd38d
   SIAlertView: d00609a1faa9d82f17b9f0b4eede64e84a577b10
   TSMessages: 2999ef55e532378692e9d14d32da2bb60e285129
-  UIActivityIndicator-for-SDWebImage: d9e46f1592d04cfbeda67bb6d7bba5348558697b
+  UIActivityIndicator-for-SDWebImage: ea42ada2c4399097c0459b6525eea5bf9bd1cca7
   UIImage-Helpers: f42c86ad5ed925f22b56a81c89f2f15ebeadfd3d
   UzysCircularProgressPullToRefresh: dae115e62fcbaaf599f782562f1655bcde1191e2
 

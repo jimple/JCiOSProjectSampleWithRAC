@@ -1,0 +1,1 @@
+../../FastAnimationWithPOP/FastAnimationWithPop/Animations/FAAnimationShake.h

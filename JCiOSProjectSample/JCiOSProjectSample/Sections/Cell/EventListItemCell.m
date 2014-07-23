@@ -71,7 +71,7 @@
     
     if (_cellViewModel)
     {
-        [self.imgView setImageWithURL:URLFromString(_cellViewModel.imageURL) placeholderImage:nil];
+        [self.imgView sd_setImageWithURL:URLFromString(_cellViewModel.imageURL) placeholderImage:nil];
         self.titleLabel.text = [_cellViewModel.title copy];
     }else{}
 }

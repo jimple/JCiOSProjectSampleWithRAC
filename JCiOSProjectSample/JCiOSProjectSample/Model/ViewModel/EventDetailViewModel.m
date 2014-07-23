@@ -51,7 +51,7 @@
         if (detailModel)
         {
             self.title = detailModel.name;
-            self.description = detailModel.description;
+            self.desc = detailModel.desc;
         }
         else
         {

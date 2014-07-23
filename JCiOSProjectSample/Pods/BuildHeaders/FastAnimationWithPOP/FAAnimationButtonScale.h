@@ -1,0 +1,1 @@
+../../FastAnimationWithPOP/FastAnimationWithPop/BindingAnimations/FAAnimationButtonScale.h

@@ -12,7 +12,7 @@
 
 @property (nonatomic, copy) NSString *eventID;
 @property (nonatomic, copy) NSString *name;
-@property (nonatomic, copy) NSString *description;
+@property (nonatomic, copy) NSString *desc;
 @property (nonatomic, strong) NSDate *publishDate;
 
 

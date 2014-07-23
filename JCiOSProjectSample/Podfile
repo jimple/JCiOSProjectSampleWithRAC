@@ -16,3 +16,6 @@ pod 'SIAlertView'
 pod 'BZGFormField'
 pod 'UzysCircularProgressPullToRefresh'
 pod 'AFNetworking'
+pod 'FastAnimationWithPOP'
+
+

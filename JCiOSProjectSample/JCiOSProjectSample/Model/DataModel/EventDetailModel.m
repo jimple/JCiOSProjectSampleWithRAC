@@ -14,7 +14,7 @@
     return @{
              @"eventID" : @"id",
              @"name" : @"name",
-             @"description" : @"desc",
+             @"desc" : @"desc",
              @"publishDate" : @"time",
              };
 }
