@@ -115,6 +115,14 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.29873572441206719" green="0.38401385664954235" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbD-bo-r1A">
+                                <rect key="frame" x="61" y="418" width="198" height="30"/>
+                                <color key="backgroundColor" red="0.29873572440000001" green="0.38401385659999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="SpringWithPOP">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -123,6 +131,7 @@
                         <outlet property="animationBtn" destination="zpg-ea-F9t" id="3w7-DN-8kX"/>
                         <outlet property="animationView" destination="cGz-Mo-j00" id="Hfp-72-26E"/>
                         <outlet property="popView" destination="AgJ-ZY-yX0" id="fSy-7l-Cej"/>
+                        <outlet property="springWithPOPBtn" destination="lbD-bo-r1A" id="XYC-Td-ATg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dhf-9k-4eE" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -9,12 +9,15 @@
 #import "SecondTabViewController.h"
 #import "FastAnimationWithPop.h"
 #import <POP.h>
+#import "UIButton+SpringTouch.h"
 
 @interface SecondTabViewController ()
 
 @property (nonatomic, weak) IBOutlet UIButton *animationBtn;
 @property (nonatomic, weak) IBOutlet UIView *animationView;
 @property (nonatomic, weak) IBOutlet UIView *popView;
+@property (nonatomic, weak) IBOutlet UIButton *springWithPOPBtn;
+
 
 @end
 
@@ -34,6 +37,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    [self.springWithPOPBtn initSpringTouch];
     
 }
 
@@ -117,9 +121,6 @@
     
     [self.popView.layer pop_addAnimation:basicAnimation forKey:@"animationWithPOP"];
 }
-
-
-
 
 
 

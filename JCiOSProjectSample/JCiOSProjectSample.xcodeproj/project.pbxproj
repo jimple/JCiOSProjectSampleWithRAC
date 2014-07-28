@@ -62,6 +62,7 @@
 		077E9EE7196A89A5006585D0 /* UtilityFunc+ValueTransformerForModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 077E9EE6196A89A5006585D0 /* UtilityFunc+ValueTransformerForModel.m */; };
 		079B1A10196E35E900152B99 /* FirstTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 079B1A0F196E35E900152B99 /* FirstTabViewController.m */; };
 		079B1A13196E377C00152B99 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 079B1A12196E377C00152B99 /* MainTabBarController.m */; };
+		07C598C51986273A00159BFF /* UIButton+SpringTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C598C41986273A00159BFF /* UIButton+SpringTouch.m */; };
 		07F99B7B196B808F00C4D04E /* EventListItemCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F99B7A196B808F00C4D04E /* EventListItemCellViewModel.m */; };
 		07F99B7E196BA42900C4D04E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F99B7D196BA42900C4D04E /* DetailViewController.m */; };
 		815F84BC8BF7430BA2D0D103 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA7CEAA35604CFC98227F25 /* libPods.a */; };
@@ -180,6 +181,8 @@
 		079B1A0F196E35E900152B99 /* FirstTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstTabViewController.m; sourceTree = "<group>"; };
 		079B1A11196E377C00152B99 /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
 		079B1A12196E377C00152B99 /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		07C598C31986273A00159BFF /* UIButton+SpringTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+SpringTouch.h"; sourceTree = "<group>"; };
+		07C598C41986273A00159BFF /* UIButton+SpringTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SpringTouch.m"; sourceTree = "<group>"; };
 		07F99B79196B808F00C4D04E /* EventListItemCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventListItemCellViewModel.h; sourceTree = "<group>"; };
 		07F99B7A196B808F00C4D04E /* EventListItemCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventListItemCellViewModel.m; sourceTree = "<group>"; };
 		07F99B7C196BA42900C4D04E /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
@@ -443,6 +446,8 @@
 				077E9E651968DF60006585D0 /* NSTimer+PauseTimer.m */,
 				077E9E6A1968DF60006585D0 /* SGInfoAlert+ShowAlert.h */,
 				077E9E6B1968DF60006585D0 /* SGInfoAlert+ShowAlert.m */,
+				07C598C31986273A00159BFF /* UIButton+SpringTouch.h */,
+				07C598C41986273A00159BFF /* UIButton+SpringTouch.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -828,6 +833,7 @@
 				077E9E701968DF60006585D0 /* SGInfoAlert+ShowAlert.m in Sources */,
 				077E9DF71968D037006585D0 /* main.m in Sources */,
 				077E9EA8196A4156006585D0 /* LeftSideViewController.m in Sources */,
+				07C598C51986273A00159BFF /* UIButton+SpringTouch.m in Sources */,
 				077E9EC5196A71B4006585D0 /* LeftSideViewTabHelper.m in Sources */,
 				071CF39F196D1F9E0011727F /* EventDetailModel.m in Sources */,
 				071CF39C196D1F120011727F /* SVREventDetailOperator.m in Sources */,
