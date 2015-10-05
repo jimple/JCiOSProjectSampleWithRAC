@@ -36,7 +36,7 @@
 + (void)resetScrlView:(UIScrollView *)sclView contentInset:(CGFloat)contentInset indicatorInset:(CGFloat)indicatorInset;
 
 // 从故事版获取VC
-+ (id)viewCtrlFormStoryboard:(NSString *)storyboardName viewCtrlID:(NSString *)viewCtrlID;
++ (id)viewCtrlFromStoryboard:(NSString *)storyboardName viewCtrlID:(NSString *)viewCtrlID;
 
 // 创建UILabel
 + (UILabel *)createLabelWithFrame:(CGRect)rc fontSize:(CGFloat)fFontSize txtColor:(UIColor *)clrTxt;
