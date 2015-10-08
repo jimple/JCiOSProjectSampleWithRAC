@@ -185,7 +185,7 @@
 }
 
 // 从故事版获取VC
-+ (id)viewCtrlFormStoryboard:(NSString *)storyboardName viewCtrlID:(NSString *)viewCtrlID
++ (id)viewCtrlFromStoryboard:(NSString *)storyboardName viewCtrlID:(NSString *)viewCtrlID
 {
     APP_ASSERT(storyboardName && viewCtrlID);
     

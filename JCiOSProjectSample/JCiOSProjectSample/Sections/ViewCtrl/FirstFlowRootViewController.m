@@ -58,7 +58,7 @@
 {
     [self setTitle:LOCALIZATION(@"FirstFlowRootViewTitle")];
     
-    _eventListVC = (EventListViewController *)[UtilityFunc viewCtrlFormStoryboard:FirstFlowStoryboard viewCtrlID:@"EventListViewController"];
+    _eventListVC = (EventListViewController *)[UtilityFunc viewCtrlFromStoryboard:FirstFlowStoryboard viewCtrlID:@"EventListViewController"];
     _eventListVC.view.frame = self.view.bounds;
     
     [self.view addSubview:_eventListVC.view];
